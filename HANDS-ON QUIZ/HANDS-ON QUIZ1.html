@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-On Quiz</title>
+</head>
+<body>
+<header>
+    <span><img src ="https://upload.wikimedia.org/wikipedia/commons/7/7a/Mary%27s_monogram_%28Marist_Brothers%29.svg" alt ="Marist Logo" width="50", height="50"></span>
+    <strong>
+        Notre Dame of Kidapawan College
+    </strong>
+    <span>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQav6L0skDX9Zvwul8RulX2c5u4fAzeUlgeEWC5myhZOG27pGvxm79YqZ-P&s=10" alt ="NDKC Logo" width="50", height="50">
+    </span>
+</header>
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a> |
+        <a href="#" onclick="showPage('about')">About</a> |
+        <a href="#" onclick="showPage('contacts')">Contacts</a> |
+        <a href="#" onclick="showPage('subjects')">Subjects with Schedule</a>
+    </nav>
+    <hr>
+    <table width ="100%">
+    <tr>
+<td valign="top" width="75%">
+
+    <div id="home" class="page">
+        <h2>Home</h2>
+        <p>Welcome to Notre Dame of Kidapawan College.</p>
+        <p>Notre Dame of Kidapawan College provides quality, values-based education to students in Kidapawan City and nearby communities.</p>
+    </div>
+        <div id="about" class="page" style="display:none;">
+            <h2>About</h2>
+                <p>Notre Dame of Kidapawan College has served students for many years, offering education grounded in faith, discipline, and academic excellence.</p>
+                </div>
+                <div id="contacts" class="page" style="display:none;">
+                    <h2>Contacts</h2>
+                    <p>Address: Kidapawan City, Cotabato, Philippines</p>
+                    <p>Phone: (064) 000-0000</p>
+                    <p>Email: info@ndkc.example.edu</p>
+                </div>
+                    <div id="subjects" class="page" style="display:none;">
+                        <h2>Subjects with Schedule</h2>
+                        <table border="1" cellpadding="5">
+                            <tr><th>Time</th><th>Monday/Wednesday</th><th>Time</th><th>Tuesday/Thursday</th></tr>
+                            <tr><td>7:30 - 10:00</td><td>IM101</td><td>10:30 - 12:00</td><td>GEC 8</td></tr>
+                            <tr><td>1:00 - 12:30</td><td>WS101</td><td>12:00 - 2:30</td><td>NET 102</td></tr>
+                            <tr><td>2:30 - 5:00</td><td>SIA101</td><td>3:00 - 5:30</td><td>ELEC 3</td></tr>
+                        </table>
+                    </div>
+                </td>
+<td valign="top" width="25%">
+    <h3>Announcements</h3>
+    <ul>
+        <li>Midterm exam schedule is September 7-12</li>
+        <li>CECE sports tryout this Friday</li>
+        <li>Gunita is on August 7</li>
+        <li>The theme for Gunita is "Enchanted Forest"</li>
+        <li>Food and Beverage are not allowed in the IT Laboratories</li>
+    </ul>
+</td>
+</tr>
+</table>
+
+<hr>
+<footer>
+    <p>&copy; 2026 Notre Dame of Kidapawan College. All rights reserved.</p>
+    <p>
+        <a href="https://www.facebook.com/ndkcofficial">Facebook</a>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://x.com">X</a>
+    </p>
+</footer>
+<script>
+    function showPage(pageId) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.style.display = 'none';
+        });
+        const selectedPage = document.getElementById(pageId);
+        if (selectedPage) {
+            selectedPage.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
